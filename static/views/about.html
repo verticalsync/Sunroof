@@ -1,0 +1,75 @@
+<head>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+
+    <style>
+        body {
+            padding: 2em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Sunroof</h1>
+    <p>
+        Sunroof is a free/libre cross platform desktop app aiming to give you a snappier Discord experience with Suncord
+        pre-installed
+    </p>
+
+    <section>
+        <h2>Links</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/verticalsync/Suncord" target="_blank">Suncord Website</a>
+            </li>
+            <li>
+                <a href="https://github.com/verticalsync/Sunroof" target="_blank">Sunroof Source Code</a>
+            </li>
+            <li>
+                <a href="https://github.com/verticalsync/Sunroof/issues" target="_blank">Report bugs / Request features</a>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Acknowledgements</h2>
+        <p>These awesome libraries empower Sunroof</p>
+        <ul>
+            <li>
+                <a href="https://github.com/electron/electron" target="_blank">Electron</a>
+                - Build cross-platform desktop apps with JavaScript, HTML, and CSS
+            </li>
+            <li>
+                <a href="https://github.com/electron-userland/electron-builder" target="_blank">Electron Builder</a>
+                - A complete solution to package and build a ready for distribution Electron app with “auto update”
+                support out of the box
+            </li>
+            <li>
+                <a href="https://github.com/OpenAsar/arrpc" target="_blank">arrpc</a>
+                - An open implementation of Discord's Rich Presence server
+            </li>
+            <li>
+                <a href="https://github.com/Soundux/rohrkabel" target="_blank">rohrkabel</a>
+                - A C++ RAII Pipewire-API Wrapper 
+            </li>
+            <li>
+                And many
+                <a href="https://github.com/verticalsync/Sunroof/blob/main/pnpm-lock.yaml" target="_blank"
+                    >more awesome open source libraries</a
+                >
+            </li>
+        </ul>
+    </section>
+</body>
+
+<script type="module">
+    const data = await Updater.getData();
+    if (data.currentVersion) {
+        const title = document.getElementById("title");
+
+        title.textContent += ` v${data.currentVersion}`;
+    }
+</script>

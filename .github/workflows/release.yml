@@ -1,0 +1,41 @@
+name: Release
+
+on:
+    push:
+        tags:
+            - v*
+
+jobs:
+    release:
+        runs-on: ${{ matrix.os }}
+
+        strategy:
+            matrix:
+                os: [ubuntu-latest, windows-latest]
+                include:
+                    - os: ubuntu-latest
+                      platform: linux
+                    - os: windows-latest
+                      platform: windows
+
+        steps:
+            - uses: actions/checkout@v3
+            - uses: pnpm/action-setup@v2 # Install pnpm using packageManager key in package.json
+
+            - name: Use Node.js 18.18.2
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 18.18.2
+                  cache: "pnpm"
+
+            - name: Install dependencies
+              run: pnpm install --frozen-lockfile
+
+            - name: Build
+              run: pnpm build
+
+            - name: Run Electron Builder
+              run: |
+                  pnpm electron-builder --${{ matrix.platform }} --publish always
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

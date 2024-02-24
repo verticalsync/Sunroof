@@ -1,0 +1,148 @@
+{
+    "name": "sunroof",
+    "version": "1.5.1",
+    "private": true,
+    "description": "",
+    "keywords": [],
+    "homepage": "https://github.com/verticalsync/sunroof",
+    "license": "GPL-3.0",
+    "author": "verticalsync",
+    "main": "dist/js/main.js",
+    "scripts": {
+        "build": "tsx scripts/build/build.mts",
+        "build:dev": "pnpm build --dev",
+        "package": "pnpm build && electron-builder",
+        "package:dir": "pnpm build && electron-builder --dir",
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.mts,.mjs",
+        "lint:fix": "pnpm lint --fix",
+        "start": "pnpm build && electron .",
+        "start:dev": "pnpm build:dev && electron .",
+        "start:watch": "pnpm build:dev && tsx scripts/startWatch.mts",
+        "test": "pnpm lint && pnpm testTypes",
+        "testTypes": "tsc --noEmit",
+        "watch": "pnpm build --watch",
+        "updateMeta": "tsx scripts/utils/updateMeta.mts"
+    },
+    "dependencies": {
+        "arrpc": "github:OpenAsar/arrpc#98879cae0565e6fce34e4cb6f544bf42c6a7e7c8"
+    },
+    "optionalDependencies": {
+        "@vencord/venmic": "^3.3.2"
+    },
+    "devDependencies": {
+        "@fal-works/esbuild-plugin-global-externals": "^2.1.2",
+        "@types/node": "^20.11.2",
+        "@types/react": "^18.2.48",
+        "@typescript-eslint/eslint-plugin": "^6.19.0",
+        "@typescript-eslint/parser": "^6.19.0",
+        "@vencord/types": "^0.1.2",
+        "dotenv": "^16.3.1",
+        "electron": "^28.1.3",
+        "electron-builder": "^24.9.1",
+        "esbuild": "^0.19.11",
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-plugin-license-header": "^0.6.0",
+        "eslint-plugin-path-alias": "^1.0.0",
+        "eslint-plugin-prettier": "^5.1.3",
+        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "eslint-plugin-unused-imports": "^3.0.0",
+        "prettier": "^3.2.2",
+        "source-map-support": "^0.5.21",
+        "tsx": "^4.7.0",
+        "type-fest": "^4.9.0",
+        "typescript": "^5.3.3",
+        "xml-formatter": "^3.6.0"
+    },
+    "packageManager": "pnpm@8.11.0",
+    "engines": {
+        "node": ">=18",
+        "pnpm": ">=8"
+    },
+    "build": {
+        "appId": "me.verticalsync.sunroof",
+        "productName": "Sunroof",
+        "files": [
+            "!*",
+            "dist/js",
+            "static",
+            "package.json",
+            "LICENSE"
+        ],
+        "beforePack": "scripts/build/sandboxFix.js",
+        "linux": {
+            "icon": "build/icon.icns",
+            "category": "Network",
+            "maintainer": "rcx@riseup.net",
+            "target": [
+                {
+                    "target": "deb",
+                    "arch": [
+                        "x64",
+                        "arm64"
+                    ]
+                },
+                {
+                    "target": "tar.gz",
+                    "arch": [
+                        "x64",
+                        "arm64"
+                    ]
+                },
+                {
+                    "target": "rpm",
+                    "arch": [
+                        "x64",
+                        "arm64"
+                    ]
+                },
+                {
+                    "target": "AppImage",
+                    "arch": [
+                        "x64",
+                        "arm64"
+                    ]
+                }
+            ],
+            "desktop": {
+                "Name": "Suncord",
+                "GenericName": "Internet Messenger",
+                "Type": "Application",
+                "Categories": "Network;InstantMessaging;Chat;",
+                "Keywords": "discord;suncord;sunroof;vencord;electron;chat;"
+            }
+        },
+        "mac": {
+            "target": [
+                {
+                    "target": "default",
+                    "arch": [
+                        "x64",
+                        "arm64"
+                    ]
+                }
+            ],
+            "category": "Network",
+            "extendInfo": {
+                "NSMicrophoneUsageDescription": "This app needs access to the microphone",
+                "NSCameraUsageDescription": "This app needs access to the camera",
+                "com.apple.security.device.audio-input": true,
+                "com.apple.security.device.camera": true
+            }
+        },
+        "nsis": {
+            "include": "build/installer.nsh",
+            "oneClick": false
+        },
+        "win": {
+            "target": [
+                "nsis",
+                "zip"
+            ]
+        },
+        "publish": {
+            "provider": "github"
+        }
+    }
+}

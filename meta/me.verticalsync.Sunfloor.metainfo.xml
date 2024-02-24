@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop-application">
+  <!--Created with jdAppStreamEdit 7.1-->
+  <id>me.verticalsync.Sunroof</id>
+  <name>Sunroof</name>
+  <summary>Snappier Discord app with Suncord</summary>
+  <developer_name>Suncord Contributors</developer_name>
+  <launchable type="desktop-id">me.verticalsync.Sunroof.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <project_group>Suncord</project_group>
+  <description>
+    <p>Sunroof is a cross platform desktop app aiming to give you a snappier Discord experience with Suncord pre-installed.</p>
+    <p>Sunroof comes bundled with Venmic, a purpose-built library to provide functioning audio screenshare.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Suncord settings page and about window open</caption>
+      <image type="source">https://vencord.dev/assets/screenshots/vesktop-1-appstream.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>A dialog showing screenshare options</caption>
+      <image type="source">https://vencord.dev/assets/screenshots/vesktop-2-appstream.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>A screenshot of a Discord server</caption>
+      <image type="source">https://vencord.dev/assets/screenshots/vesktop-3-appstream.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="1.5.1" date="2024-02-24" type="stable">
+      <url>https://github.com/verticalsync/Sunroof/releases/tag/1.5.1</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>Fork of Vesktop renamed to Sunroof</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <url type="homepage">https://github.com/verticalsync/Sunroof</url>
+  <url type="bugtracker">https://github.com/verticalsync/Sunroof/issues</url>
+  <url type="help">https://github.com/verticalsync/Sunroof/issues</url>
+  <url type="donation">https://github.com/sponsors/verticalsync</url>
+  <url type="vcs-browser">https://github.com/verticalsync/Sunroof</url>
+  <categories>
+    <category>InstantMessaging</category>
+    <category>AudioVideo</category>
+  </categories>
+  <requires>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <display_length compare="ge">420</display_length>
+    <internet>always</internet>
+  </requires>
+  <recommends>
+    <control>voice</control>
+    <display_length compare="ge">760</display_length>
+    <display_length compare="le">1200</display_length>
+    <internet>always</internet>
+  </recommends>
+  <supports>
+    <internet>always</internet>
+  </supports>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-audio">intense</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="social-info">intense</content_attribute>
+  </content_rating>
+  <keywords>
+    <keyword>Discord</keyword>
+    <keyword>Sunroof</keyword>
+    <keyword>Suncord</keyword>
+    <keyword>Vencord</keyword>
+    <keyword>Vesktop</keyword>
+    <keyword>Privacy</keyword>
+    <keyword>Mod</keyword>
+  </keywords>
+</component>

@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+
+    <style>
+        body {
+            user-select: none;
+            -webkit-app-region: drag;
+        }
+
+        .wrapper {
+            box-sizing: border-box;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            border: 1px solid var(--fg-semi-trans);
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            width: 128px;
+            height: 128px;
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img
+            draggable="false"
+            src="../troll.gif"
+            alt="troll"
+            role="presentation"
+        />
+        <p>Loading Sunroof...</p>
+    </div>
+</body>
