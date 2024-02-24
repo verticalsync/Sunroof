@@ -34,7 +34,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Command line output**
 
-Run vesktop from the command line. Include the relevant command line output here:
+Run sunroof from the command line. Include the relevant command line output here:
 ```
 paste inside these backticks
 ```
