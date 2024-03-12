@@ -6,6 +6,10 @@ Sunroof is a [Vesktop](https://github.com/Vencord/Vesktop) fork
 
 Find the required installer you need [here](https://github.com/verticalsync/Sunroof/releases/tag/latest).
 
+## Windows contribution
+
+You will get test errors about venmic, you can ignore these as it's a linux only module.
+
 ## Building from Source
 
 Packaging will create builds in the dist/ folder
