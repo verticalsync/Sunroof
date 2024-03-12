@@ -11,7 +11,7 @@ assignees: ""
 Please do not open issues for the following things. We cannot help you with them:
 - Screenshare does not start / is black ~ This is an issue with your desktop environment, specifically its xdg-desktop-portal
 - Purely graphical glitches, like flickering, scaling issues, short whitescreens, etc ~ These are most likely issues with your GPU. try to disable hardware acceleration
-- Vencord related issues ~ This is the Sunroof repo, not Vencord
+- Suncord related issues ~ This is the Sunroof repo, not Suncord
 - Getting logged out after restart ~ If you use DevTools, make sure you have NoDevtoolsWarning enabled. Otherwise try reinstalling Sunroof
 
 -->

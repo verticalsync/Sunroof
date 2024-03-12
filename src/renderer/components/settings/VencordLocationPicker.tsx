@@ -12,7 +12,7 @@ export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
     return (
         <>
             <Forms.FormText>
-                Vencord files are loaded from{" "}
+                Suncord files are loaded from{" "}
                 {settings.vencordDir ? (
                     <a
                         href="about:blank"
