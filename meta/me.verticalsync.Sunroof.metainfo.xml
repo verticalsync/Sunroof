@@ -27,6 +27,15 @@
       <image type="source">https://vencord.dev/assets/screenshots/vesktop-3-appstream.png</image>
     </screenshot>
   </screenshots>
+    <release version="1.5.6" date="2024-02-24" type="stable">
+      <url>https://github.com/verticalsync/Sunroof/releases/tag/1.5.6</url>
+      <description>
+        <p>Fixes</p>
+        <ul>
+          <li>Fix screenshare and some other things not working</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.5.5" date="2024-02-24" type="stable">
       <url>https://github.com/verticalsync/Sunroof/releases/tag/1.5.5</url>
       <description>
