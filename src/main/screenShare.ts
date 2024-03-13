@@ -51,7 +51,7 @@ export function registerScreenShareHandler() {
             if (video) {
                 const stream = await request.frame
                     .executeJavaScript(
-                        `Sunfloor.Components.ScreenShare.openScreenSharePicker(${JSON.stringify([video])},true)`
+                        `Sunroof.Components.ScreenShare.openScreenSharePicker(${JSON.stringify([video])},true)`
                     )
                     .catch(() => null);
                 if (stream === null) return callback({});
@@ -62,7 +62,7 @@ export function registerScreenShareHandler() {
         }
 
         const choice = await request.frame
-            .executeJavaScript(`Sunfloor.Components.ScreenShare.openScreenSharePicker(${JSON.stringify(data)})`)
+            .executeJavaScript(`Sunroof.Components.ScreenShare.openScreenSharePicker(${JSON.stringify(data)})`)
             .then(e => e as StreamPick)
             .catch(e => {
                 console.error("Error during screenshare picker", e);
