@@ -6,9 +6,9 @@
 [![Tests](https://github.com/verticalsync/Sunroof/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/verticalsync/Sunroof/actions/workflows/test.yml)
 [![Discord](https://img.shields.io/discord/1207691698386501634.svg?color=768AD4&label=Discord&logo=discord&logoColor=white)](https://discord.gg/VasF3Ma4Ab)
 
-Sunroof is a fork of [Vesktop](https://github.com/Vencord/Vesktop)
+Sunroof is a fork of [Vesktop](https://github.com/Vencord/Vesktop).
 
-**Main features**:
+## Main features
 - Suncord preinstalled
 - Much more lightweight and faster than the official Discord app
 - Linux Screenshare with sound & wayland
@@ -26,6 +26,8 @@ Find the required installer you need [here](https://github.com/verticalsync/Sunr
   
 ## Building from Source
 Packaging will create builds in the dist/ folder
+> [!NOTE]
+> On Windows contribution, You will get test errors about venmic, you can ignore these as it's a linux only module.
 
 ```sh
 git clone https://github.com/verticalsync/Sunroof
