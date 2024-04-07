@@ -27,7 +27,7 @@ Find the required installer you need [here](https://github.com/verticalsync/Sunr
 ## Building from Source
 Packaging will create builds in the dist/ folder
 > [!NOTE]
-> On Windows contribution, You will get test errors about venmic, you can ignore these as it's a linux only module.
+> On Windows, You will get test errors about venmic, you can ignore these as it's a linux only module.
 
 ```sh
 git clone https://github.com/verticalsync/Sunroof
