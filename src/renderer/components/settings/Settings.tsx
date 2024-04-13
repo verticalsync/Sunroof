@@ -87,7 +87,7 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
         {
             key: "clickTrayToShowHide",
             title: "Hide/Show on tray click",
-            description: "Left clicking tray icon will toggle the vesktop window visibility.",
+            description: "Left clicking tray icon will toggle the sunroof window visibility.",
             defaultValue: false
         },
         {
