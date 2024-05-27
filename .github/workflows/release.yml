@@ -11,8 +11,10 @@ jobs:
 
         strategy:
             matrix:
-                os: [ubuntu-latest, windows-latest]
+                os: [macos-latest, ubuntu-latest, windows-latest]
                 include:
+                    - os: macos-latest
+                      platform: mac
                     - os: ubuntu-latest
                       platform: linux
                     - os: windows-latest
@@ -35,7 +37,16 @@ jobs:
               run: pnpm build
 
             - name: Run Electron Builder
+              if: ${{ matrix.platform != 'mac' }}
               run: |
                   pnpm electron-builder --${{ matrix.platform }} --publish always
               env:
                   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Run Electron Builder
+              if: ${{ matrix.platform == 'mac' }}
+              run: |
+                  pnpm electron-builder --${{ matrix.platform }} --publish always
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  CSC_LINK: ${{ secrets.APPLE_SIGNING_CERT }}
