@@ -27,6 +27,12 @@
       <image type="source">https://vencord.dev/assets/screenshots/vesktop-3-appstream.png</image>
     </screenshot>
   </screenshots>
+    <release version="1.6.0" date="2024-03-25" type="stable">
+      <url>https://github.com/verticalsync/Sunroof/releases/tag/1.6.0</url>
+      <description>
+        <p>Add new commits from Vesktop</p>
+      </description>
+    </release>
     <release version="1.5.9" date="2024-03-25" type="stable">
       <url>https://github.com/verticalsync/Sunroof/releases/tag/1.5.9</url>
       <description>

@@ -21,8 +21,6 @@ export interface Settings {
     appBadge?: boolean;
     disableMinSize?: boolean;
     clickTrayToShowHide?: boolean;
-    /** @deprecated use customTitleBar */
-    discordWindowsTitleBar?: boolean;
     customTitleBar?: boolean;
 
     checkUpdates?: boolean;
@@ -31,12 +29,15 @@ export interface Settings {
     splashAnimationPath?: string;
     splashColor?: string;
     splashBackground?: string;
+
+    spellCheckLanguages?: string[];
 }
 
 export interface State {
     maximized?: boolean;
     minimized?: boolean;
     windowBounds?: Rectangle;
+    displayid: int;
 
     skippedUpdate?: string;
     firstLaunch?: boolean;

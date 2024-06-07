@@ -41,7 +41,7 @@ export const VesktopNative = {
         set: (settings: Settings, path?: string) => invoke<void>(IpcEvents.SET_SETTINGS, settings, path)
     },
     spellcheck: {
-        setLanguages: (languages: readonly string[]) => invoke<void>(IpcEvents.SPELLCHECK_SET_LANGUAGES, languages),
+        getAvailableLanguages: () => sendSync<string[]>(IpcEvents.SPELLCHECK_GET_AVAILABLE_LANGUAGES),
         onSpellcheckResult(cb: SpellCheckerResultCallback) {
             spellCheckCallbacks.add(cb);
         },
@@ -63,9 +63,12 @@ export const VesktopNative = {
     /** only available on Linux. */
     virtmic: {
         list: () =>
-            invoke<{ ok: false; isGlibcxxToOld: boolean } | { ok: true; targets: string[] }>(IpcEvents.VIRT_MIC_LIST),
+            invoke<
+                { ok: false; isGlibCxxOutdated: boolean } | { ok: true; targets: string[]; hasPipewirePulse: boolean }
+            >(IpcEvents.VIRT_MIC_LIST),
         start: (targets: string[], workaround?: boolean) => invoke<void>(IpcEvents.VIRT_MIC_START, targets, workaround),
-        startSystem: (workaround?: boolean) => invoke<void>(IpcEvents.VIRT_MIC_START_SYSTEM, workaround),
+        startSystem: (workaround?: boolean, onlyDefaultSpeakers?: boolean) =>
+            invoke<void>(IpcEvents.VIRT_MIC_START_SYSTEM, workaround, onlyDefaultSpeakers),
         stop: () => invoke<void>(IpcEvents.VIRT_MIC_STOP)
     },
     arrpc: {
