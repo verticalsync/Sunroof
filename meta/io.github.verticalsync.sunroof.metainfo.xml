@@ -27,6 +27,7 @@
       <image type="source">https://files.catbox.moe/uzpk4h.png</image>
     </screenshot>
   </screenshots>
+  <releases>
     <release version="1.6.0" date="2024-03-25" type="stable">
       <url>https://github.com/verticalsync/Sunroof/releases/tag/1.6.0</url>
       <description>
