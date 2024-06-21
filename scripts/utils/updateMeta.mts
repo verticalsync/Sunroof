@@ -50,7 +50,7 @@ const latestReleaseInformation = await fetch("https://api.github.com/repos/verti
     }
 }).then(res => res.json());
 
-const metaInfo = await fs.readFile("./meta/me.verticalsync.Sunroof.metainfo.xml", "utf-8");
+const metaInfo = await fs.readFile("./meta/io.github.verticalsync.sunroof.metainfo.xml", "utf-8");
 
 const parser = new DOMParser().parseFromString(metaInfo, "text/xml");
 
@@ -90,4 +90,4 @@ const output = xmlFormat(new XMLSerializer().serializeToString(parser), {
     indentation: "  "
 });
 
-await fs.writeFile("./meta/me.verticalsync.Sunroof.metainfo.xml", output, "utf-8");
+await fs.writeFile("./meta/io.github.verticalsync.sunroof.metainfo.xml", output, "utf-8");

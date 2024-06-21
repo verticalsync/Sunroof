@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component type="desktop-application">
   <!--Created with jdAppStreamEdit 7.1-->
-  <id>me.verticalsync.Sunroof</id>
+  <id>io.github.verticalsync.sunroof</id>
   <name>Sunroof</name>
   <summary>Snappier Discord app with Suncord</summary>
   <developer_name>Suncord Contributors</developer_name>
-  <launchable type="desktop-id">me.verticalsync.Sunroof.desktop</launchable>
+  <launchable type="desktop-id">io.github.verticalsync.sunroof</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
   <project_group>Suncord</project_group>
   <description>
-    <p>Sunroof is a cross platform desktop app aiming to give you a snappier Discord experience with Suncord pre-installed.</p>
-    <p>Sunroof comes bundled with Venmic, a purpose-built library to provide functioning audio screenshare.</p>
+    <p>Sunroof is a cross-platform Vesktop Fork desktop app aiming to give you extra plugins but still give you a snappier Discord experience, with Suncord pre-installed.</p>
+    <p>Which comes bundled with Venmic, a purpose-built library to provide functioning audio screenshare.</p>
   </description>
   <screenshots>
     <screenshot type="default">
       <caption>Suncord settings page and about window open</caption>
-      <image type="source">https://vencord.dev/assets/screenshots/vesktop-1-appstream.png</image>
+      <image type="source">https://files.catbox.moe/59wp6h.png</image>
     </screenshot>
     <screenshot>
       <caption>A dialog showing screenshare options</caption>
-      <image type="source">https://vencord.dev/assets/screenshots/vesktop-2-appstream.png</image>
+      <image type="source">https://files.catbox.moe/nbo64w.png</image>
     </screenshot>
     <screenshot>
       <caption>A screenshot of a Discord server</caption>
-      <image type="source">https://vencord.dev/assets/screenshots/vesktop-3-appstream.png</image>
+      <image type="source">https://files.catbox.moe/uzpk4h.png</image>
     </screenshot>
   </screenshots>
+  <releases>
     <release version="1.6.0" date="2024-03-25" type="stable">
       <url>https://github.com/verticalsync/Sunroof/releases/tag/1.6.0</url>
       <description>
