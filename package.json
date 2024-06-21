@@ -61,7 +61,7 @@
         "pnpm": ">=9"
     },
     "build": {
-        "appId": "me.verticalsync.sunroof",
+        "appId": "io.github.verticalsync.sunroof",
         "productName": "Sunroof",
         "files": [
             "!*",

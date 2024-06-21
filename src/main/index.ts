@@ -75,7 +75,7 @@ function init() {
 
     app.whenReady().then(async () => {
         checkUpdates();
-        if (process.platform === "win32") app.setAppUserModelId("me.verticalsync.Sunroof");
+        if (process.platform === "win32") app.setAppUserModelId("io.github.verticalsync.Sunroof");
 
         registerScreenShareHandler();
         registerMediaPermissionsHandler();
