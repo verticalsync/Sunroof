@@ -13,10 +13,11 @@ body:
 
               Make sure both Sunroof and Suncord are fully up to date. You can update Suncord by right-clicking the Sunroof tray icon and pressing "Update Suncord"
 
-              Do not report any of the following issues:
+              **DO NOT REPORT** any of the following issues:
               - Purely graphical glitches like flickering, scaling issues, etc: Issue with your gpu. Nothing we can do, update drivers or disable hardware acceleration
-              - Suncord related issues: This is the Sunroof repo, not Suncord
-              - Screenshare not starting / black screening on Linux: Issue with your desktop environment, specifically its xdg-desktop-portal
+              - Vencord related issues: This is the Vesktop repo, not Vencord
+              - **SCREENSHARE NOT STARTING** / black screening on Linux: Issue with your desktop environment, specifically its xdg-desktop-portal.
+                If that also doesn't work, you have to fix your systen. Inspect errors and google around.
 
               Linux users: Please only report issues with officially published packages
 
