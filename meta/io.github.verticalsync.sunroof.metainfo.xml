@@ -5,7 +5,7 @@
   <name>Sunroof</name>
   <summary>Snappier Discord app with Suncord</summary>
   <developer_name>Suncord Contributors</developer_name>
-  <launchable type="desktop-id">io.github.verticalsync.sunroof</launchable>
+  <launchable type="desktop-id">io.github.verticalsync.sunroof.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
   <project_group>Suncord</project_group>
