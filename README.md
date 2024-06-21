@@ -40,6 +40,8 @@ If you don't know the difference, pick the Intel build.
 
 ### Linux
 
+[![Download on Flathub](https://flathub.org/api/badge?svg)](https://flathub.org/apps/io.github.verticalsync.sunroof)
+
 If you don't know the difference, pick amd64.
 
 -   amd64 / x86_64
