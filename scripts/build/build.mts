@@ -64,12 +64,6 @@ await Promise.all([
         footer: { js: "//# sourceURL=VCDPreload" }
     }),
     createContext({
-        ...NodeCommonOpts,
-        entryPoints: ["src/updater/preload.ts"],
-        outfile: "dist/js/updaterPreload.js",
-        footer: { js: "//# sourceURL=VCDUpdaterPreload" }
-    }),
-    createContext({
         ...CommonOpts,
         globalName: "Sunroof",
         entryPoints: ["src/renderer/index.ts"],

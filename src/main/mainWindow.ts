@@ -91,7 +91,7 @@ function initTray(win: BrowserWindow) {
             click: createAboutWindow
         },
         {
-            label: "Update Suncord",
+            label: "Repair Suncord",
             async click() {
                 await downloadVencordFiles();
                 app.relaunch();
@@ -108,14 +108,14 @@ function initTray(win: BrowserWindow) {
             type: "separator"
         },
         {
-            label: "Relaunch",
+            label: "Restart",
             click() {
                 app.relaunch();
                 app.quit();
             }
         },
         {
-            label: "Quit Sunroof",
+            label: "Quit",
             click() {
                 isQuitting = true;
                 app.quit();

@@ -8,7 +8,7 @@ import { Button, Forms } from "@vencord/types/webpack/common";
 
 import { SettingsComponent } from "./Settings";
 
-export const SplashAnimationPicker: SettingsComponent = ({ settings }) => {
+export const CustomSplashAnimation: SettingsComponent = ({ settings }) => {
     return (
         <>
             <Forms.FormText>

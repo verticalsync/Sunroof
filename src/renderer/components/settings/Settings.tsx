@@ -12,9 +12,9 @@ import { Settings, useSettings } from "renderer/settings";
 import { isMac, isWindows } from "renderer/utils";
 
 import { AutoStartToggle } from "./AutoStartToggle";
+import { CustomSplashAnimation } from "./CustomSplashAnimation";
 import { DiscordBranchPicker } from "./DiscordBranchPicker";
 import { NotificationBadgeToggle } from "./NotificationBadgeToggle";
-import { SplashAnimationPicker } from "./SplashAnimationPicker";
 import { VencordLocationPicker } from "./VencordLocationPicker";
 import { WindowsTransparencyControls } from "./WindowsTransparencyControls";
 
@@ -103,15 +103,7 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
             defaultValue: false
         }
     ],
-    "Notifications & Updates": [
-        NotificationBadgeToggle,
-        {
-            key: "checkUpdates",
-            title: "Check for updates",
-            description: "Automatically check for Sunroof updates",
-            defaultValue: true
-        }
-    ],
+    Notifications: [NotificationBadgeToggle],
     Miscelleanous: [
         {
             key: "arRPC",
@@ -127,7 +119,7 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
             defaultValue: false
         }
     ],
-    "Custom Splash Animation": [SplashAnimationPicker],
+    "Custom Splash Animation": [CustomSplashAnimation],
     "Suncord Location": [VencordLocationPicker]
 };
 

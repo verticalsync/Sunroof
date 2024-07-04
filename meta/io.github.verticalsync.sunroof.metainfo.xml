@@ -197,7 +197,7 @@
   <url type="vcs-browser">https://github.com/verticalsync/Sunroof</url>
   <categories>
     <category>InstantMessaging</category>
-    <category>AudioVideo</category>
+    <category>Network</category>
   </categories>
   <requires>
     <control>pointing</control>

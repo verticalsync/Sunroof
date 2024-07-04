@@ -7,7 +7,6 @@
 import { Node } from "@vencord/venmic";
 import { ipcRenderer } from "electron";
 import type { Settings } from "shared/settings";
-import type { LiteralUnion } from "type-fest";
 
 import { IpcEvents } from "../shared/IpcEvents";
 import { invoke, sendSync } from "./typedIpc";
@@ -34,8 +33,9 @@ export const VesktopNative = {
     },
     fileManager: {
         showItemInFolder: (path: string) => invoke<void>(IpcEvents.SHOW_ITEM_IN_FOLDER, path),
-        selectVencordDir: () => invoke<LiteralUnion<"cancelled" | "invalid", string>>(IpcEvents.SELECT_VENCORD_DIR),
-        selectImagePath: () => invoke<LiteralUnion<"cancelled", string>>(IpcEvents.SELECT_IMAGE_PATH)
+        getVencordDir: () => sendSync<string | undefined>(IpcEvents.GET_VENCORD_DIR),
+        selectVencordDir: (value?: null) => invoke<"cancelled" | "invalid" | "ok">(IpcEvents.SELECT_VENCORD_DIR, value),
+        selectImagePath: () => invoke<"cancelled">(IpcEvents.SELECT_IMAGE_PATH)
     },
     settings: {
         get: () => sendSync<Settings>(IpcEvents.GET_SETTINGS),
