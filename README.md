@@ -28,15 +28,16 @@ You can join our [discord server](https://discord.gg/VasF3Ma4Ab) for commits, ch
 
 If you don't know the difference, pick the Installer.
 
--   [Installer](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-Setup-1.6.0.exe)
--   [Portable](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.0-win.zip)
+-   [Installer](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-Setup-1.6.1.exe)
+-   Portable
+    -   [x64 / amd64](<(https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.1-win.zip)>)
+    -   [arm64](https://github.com/verticalsync/Sunroof/releases/download/v1.6.1/Sunroof-1.6.1-arm64-win.zip)
 
 ### Mac
 
 If you don't know the difference, pick the Intel build.
 
--   [Intel build (amd64)](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.0.dmg)
--   [Apple Silicon (arm64)](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.0-arm64.dmg)
+-   [Sunroof.dmg](https://github.com/verticalsync/Sunroof/releases/download/v1.6.1/Sunroof-1.6.1-universal.dmg)
 
 ### Linux
 
@@ -45,15 +46,15 @@ If you don't know the difference, pick the Intel build.
 If you don't know the difference, pick amd64.
 
 -   amd64 / x86_64
-    -   [AppImage](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.0.AppImage)
-    -   [Ubuntu/Debian (.deb)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof_1.6.0_amd64.deb)
-    -   [Fedora/RHEL (.rpm)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.0.x86_64.rpm)
-    -   [tarball](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.0.tar.gz)
+    -   [AppImage](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.1.AppImage)
+    -   [Ubuntu/Debian (.deb)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof_1.6.1_amd64.deb)
+    -   [Fedora/RHEL (.rpm)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.1.x86_64.rpm)
+    -   [tarball](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.1.tar.gz)
 -   arm64 / aarch64
-    -   [AppImage](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.0-arm64.AppImage)
-    -   [Ubuntu/Debian (.deb)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof_1.6.0_arm64.deb)
-    -   [Fedora/RHEL (.rpm)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.0.aarch64.rpm)
-    -   [tarball](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.0-arm64.tar.gz)
+    -   [AppImage](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.1-arm64.AppImage)
+    -   [Ubuntu/Debian (.deb)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof_1.6.1_arm64.deb)
+    -   [Fedora/RHEL (.rpm)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.1.aarch64.rpm)
+    -   [tarball](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.1-arm64.tar.gz)
 
 ## Building from Source
 
