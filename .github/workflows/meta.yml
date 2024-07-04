@@ -12,7 +12,7 @@ jobs:
 
         steps:
             - uses: actions/checkout@v4
-            - uses: pnpm/action-setup@v4 # Install pnpm using packageManager key in package.json
+            - uses: pnpm/action-setup@v4
 
             - name: Use Node.js 20
               uses: actions/setup-node@v4
@@ -32,6 +32,7 @@ jobs:
                   git checkout -b ci/meta-update
                   git add meta/io.github.verticalsync.sunroof.metainfo.xml
                   git commit -m "Insert release changes for ${{ github.event.release.tag_name }}"
+                  git pull
                   git push origin ci/meta-update
                   gh pr create -B main -H ci/meta-update -t "Metainfo for ${{ github.event.release.tag_name }}" -b "This PR updates the metainfo for release ${{ github.event.release.tag_name }}. @verticalsync"
               env:
