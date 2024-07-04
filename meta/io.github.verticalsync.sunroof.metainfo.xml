@@ -28,6 +28,10 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.6.1" date="2024-07-04" type="stable">
+      <url>https://github.com/verticalsync/Sunroof/releases/tag/v1.6.1</url>
+      <description/>
+    </release>
     <release version="1.6.0" date="2024-03-25" type="stable">
       <url>https://github.com/verticalsync/Sunroof/releases/tag/1.6.0</url>
       <description>
