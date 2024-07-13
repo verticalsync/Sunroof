@@ -30,7 +30,7 @@ If you don't know the difference, pick the Installer.
 
 -   [Installer](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-Setup-1.6.1.exe)
 -   Portable
-    -   [x64 / amd64](<(https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.1-win.zip)>)
+    -   [x64 / amd64](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.1-win.zip)
     -   [arm64](https://github.com/verticalsync/Sunroof/releases/download/v1.6.1/Sunroof-1.6.1-arm64-win.zip)
 
 ### Mac
