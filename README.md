@@ -56,6 +56,13 @@ If you don't know the difference, pick amd64.
     -   [Fedora/RHEL (.rpm)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.1.aarch64.rpm)
     -   [tarball](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.1-arm64.tar.gz)
 
+## Sponsors
+
+|                       **Thanks a lot to all Suncord [sponsors](https://github.com/sponsors/verticalsync)!!**                        |
+| :---------------------------------------------------------------------------------------------------------------------------------: |
+| [![](https://raw.githubusercontent.com/verticalsync/github-sponsor-graph/main/graph.png)](https://github.com/sponsors/verticalsync) |
+|                _generated using forked [github-sponsor-graph](https://github.com/verticalsync/github-sponsor-graph)_                |
+
 ## Building from Source
 
 Packaging will create builds in the dist/ folder
