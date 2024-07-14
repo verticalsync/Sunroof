@@ -154,7 +154,7 @@ open(VENCORD_QUICKCSS_FILE, "a+").then(fd => {
         VENCORD_QUICKCSS_FILE,
         { persistent: false },
         debounce(async () => {
-            mainWin?.webContents.postMessage("SuncordQuickCssUpdate", await readCss());
+            mainWin?.webContents.postMessage("VencordQuickCssUpdate", await readCss());
         }, 50)
     );
 });
@@ -164,6 +164,6 @@ watch(
     VENCORD_THEMES_DIR,
     { persistent: false },
     debounce(() => {
-        mainWin?.webContents.postMessage("SuncordThemeUpdate", void 0);
+        mainWin?.webContents.postMessage("VencordThemeUpdate", void 0);
     })
 );
