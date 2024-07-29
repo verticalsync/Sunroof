@@ -1,3 +1,7 @@
+# EOL (read, thanks)
+Use [Equibop](https://github.com/Equicord/equibop) now.
+Suncord has gone EOL. Because I don't always have the time to keep up with what people suggest or such and it's easier for me to work on [Equicord](https://github.com/Equicord/Equicord)/[Equibop](https://github.com/Equicord/Equibop) with other people, the source and everything will stay here and you can still use it, but it'll probably become outdated after some time and break.
+
 # Sunroof [<img src="./static/icon.png" width="225" align="right" alt="Sunroof">](https://github.com/verticalsync/Sunroof)
 
 [![Suncord](https://img.shields.io/badge/Suncord-yellow?style=flat)](https://github.com/verticalsync/Suncord)
